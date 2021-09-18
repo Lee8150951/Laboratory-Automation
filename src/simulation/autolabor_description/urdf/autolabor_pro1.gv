@@ -1,0 +1,23 @@
+digraph G {
+node [shape=box];
+"base_link" [label="base_link"];
+"imu_link" [label="imu_link"];
+"left_back_wheel" [label="left_back_wheel"];
+"left_front_wheel" [label="left_front_wheel"];
+"lider_1_link" [label="lider_1_link"];
+"right_back_wheel" [label="right_back_wheel"];
+"right_front_wheel" [label="right_front_wheel"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base_link" -> "joint_imu" [label="xyz: 0 0 0.4 \nrpy: 0 -0 0"]
+"joint_imu" -> "imu_link"
+"base_link" -> "joint_left_back" [label="xyz: -0.18988 0.2643 0.11913 \nrpy: 0 -0 0"]
+"joint_left_back" -> "left_back_wheel"
+"base_link" -> "joint_left_front" [label="xyz: 0.19649 0.2643 0.11913 \nrpy: 0 -0 0"]
+"joint_left_front" -> "left_front_wheel"
+"base_link" -> "joint_lidar_1" [label="xyz: 0.4 0 0.3 \nrpy: 0 -0 0"]
+"joint_lidar_1" -> "lider_1_link"
+"base_link" -> "joint_right_back" [label="xyz: -0.18988 -0.2643 0.11913 \nrpy: 0 -0 0"]
+"joint_right_back" -> "right_back_wheel"
+"base_link" -> "joint_right_front" [label="xyz: 0.19649 -0.2643 0.11913 \nrpy: 0 -0 0"]
+"joint_right_front" -> "right_front_wheel"
+}

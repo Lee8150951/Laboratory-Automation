@@ -1,0 +1,2 @@
+simulation/autolabor_description:simulation/autolabor_gazebo_plugins:test/autolabor_teleop:tools/autolabor_keyboard_control:tools/autolabor_pro1_driver
+-DCATKIN_DEVEL_PREFIX=/home/jacob/Desktop/Autolabor-pro1/devel -DCMAKE_INSTALL_PREFIX=/home/jacob/Desktop/Autolabor-pro1/install -G Unix Makefiles
